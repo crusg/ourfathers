@@ -1,0 +1,70 @@
+---
+layout: default
+meta-title: Home
+title: Home
+---
+<section class="l-accordion hide-for-small-only" id="top">
+	<div class="l-accordion__slide" data-accordion-slide="1">
+		<div class="l-accordion__inside">
+      <h1 class="label secondary"><a class="button" href="edgar.html"><i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Watch Edgar's story</a></h1>
+		</div>
+	</div>
+
+	<div class="l-accordion__slide coming-soon" data-accordion-slide="2">
+		<div class="l-accordion__inside">
+			<h1 class="label">Mark's Story Coming Soon</h1>
+		</div>
+	</div>
+
+	<div class="l-accordion__slide coming-soon" data-accordion-slide="3">
+		<div class="l-accordion__inside">
+      <h1 class="label">David's Story Coming Soon</h1>
+		</div>
+	</div>
+
+	<div class="l-accordion__slide coming-soon" data-accordion-slide="4">
+		<div class="l-accordion__inside">
+      <h1 class="label">Jason's Story Coming Soon</h1>
+		</div>
+	</div>
+
+  <div class="l-accordion__slide" data-accordion-slide="5">
+		<div class="l-accordion__inside">
+      <p class="label alert"><a href="#howtobe"><img src="assets/img/HTBAF-Wt.png" width="200px"></a></p>
+		</div>
+	</div>
+</section>
+<header class="main show-for-small-only">
+  <div class="column">
+    <div class="circles-container">
+      <div class="column">
+				<div class="row column"><h1>Hear the stories of four fathers</h1></div>
+        <div class="row small-up-2 medium-up-4">
+          <div class="column">
+            <a href="edgar.html"><p class="secondary label"><i class="fa fa-video-camera"></i>&nbsp;Watch Edgar's story</p><img src="{{root}}assets/img/EdgarProfilebg-square.jpg" class="thumbnail" alt="">
+            </a>
+          </div>
+          <div class="column">
+            <a href="#"><p class="primary label">Coming soon</p><img src="{{root}}assets/img/DavidProfilebg-square.jpg" class="thumbnail" alt=""></a>
+          </div>
+          <div class="column">
+            <a href="#"><p class="primary label">Coming soon</p><img src="{{root}}assets/img/MarkProfilebg-square.jpg" class="thumbnail" alt=""></a>
+          </div>
+          <div class="column">
+            <a href="#"><p class="primary label">Coming soon</p><img src="{{root}}assets/img/JasonProfilebg-square.jpg" class="thumbnail" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="column row expanded article-container" id="howtobe">
+      <div class="heading-title">
+      	<h1><img id="heading" src="assets/img/HTBAF-Bk.png" alt="#HowToBeAFather" /></h1>
+      </div>
+			<div class="row small-up-1 medium-up-3 large-up-4">
+				{{#each article-list.articles}}
+				{{> article-cards}}
+				{{/each}}
+			</div>
+</div>
